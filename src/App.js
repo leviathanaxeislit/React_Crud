@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Create from './Components/Create';
+import Post from './Components/Post';
+import Update from './Components/Update';
+import Delete from './Components/Delete';
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+
+      <h1>
+        TASK-1
+        </h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          React CRUD using AXIOS.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <button onClick={Create}>GET</button>
+        <button onClick={Post}>POST</button>
+        <button onClick={Delete} >DELETE</button>
+        <button onClick={Update}>PATCH</button>
+        <footer>Check for Output in Developer Console</footer>
       </header>
+     
     </div>
   );
 }
